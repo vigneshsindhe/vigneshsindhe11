@@ -1,0 +1,28 @@
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate Snake
+        uses: Platane/snk@v4
+        with:
+          github_user_name: vigneshsindhe
+          output_svg_path: output/snake.svg
+
+      - name: Push to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🐍 Update contribution snake [skip ci]"
+          file_pattern: output/snake*.svg
+          branch: main

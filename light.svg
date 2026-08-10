@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="350" viewBox="0 0 1180 350" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',Monaco,monospace" role="img" aria-label="Vignesh Sindhe — profile.sh --live">
+<defs>
+<linearGradient id="greenGradLight" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#00FF00"><animate attributeName="stop-color" values="#00FF00;#39FF14;#00FF00" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="0.5" stop-color="#39FF14"><animate attributeName="stop-color" values="#39FF14;#00CC33;#39FF14" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="1" stop-color="#00FF00"><animate attributeName="stop-color" values="#00FF00;#39FF14;#00FF00" dur="6s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<filter id="glowLight" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<clipPath id="windowClipLight"><rect x="2" y="2" width="1176" height="346" rx="15"/></clipPath>
+</defs>
+<rect x="2" y="2" width="1176" height="346" rx="15" fill="#0A0A0A"/>
+<g clip-path="url(#windowClipLight)">
+<!-- Top bar -->
+<rect x="2" y="2" width="1176" height="42" fill="#0D0D0D" stroke="#00FF00" stroke-width="0.5" opacity="0.9"/>
+<!-- Traffic light circles -->
+<circle cx="28" cy="23" r="7" fill="#FF5F56"/>
+<circle cx="56" cy="23" r="7" fill="#FFBD2E"/>
+<circle cx="84" cy="23" r="7" fill="#27C93F"/>
+<!-- Header text -->
+<text x="590" y="27" text-anchor="middle" font-size="13" fill="#00FF40" opacity="0.6">vigneshsindhe1@gmail.com - % ./profile.sh --live</text>
+<!-- Decorative border -->
+<rect x="20" y="56" width="1140" height="270" fill="none" stroke="#00FF00" stroke-width="1" opacity="0.15" rx="8"/>
+<!-- Diagonal accent lines -->
+<path d="M20 56 L1160 326 M1160 56 L20 326" stroke="#00FF00" stroke-width="0.5" opacity="0.06"/>
+<!-- Main name -->
+<text x="590" y="175" text-anchor="middle" font-size="52" font-weight="700" fill="url(#greenGradLight)" filter="url(#glowLight)">VIGNESH SINDHE</text>
+<!-- Role -->
+<text x="590" y="215" text-anchor="middle" font-size="18" fill="#00FF00" opacity="0.5">Full Stack Developer • Problem Solver</text>
+<!-- Terminal prompt lines -->
+<text x="50" y="275" font-size="15" fill="#00FF00" opacity="0.4">&gt;&gt; whoami</text>
+<text x="170" y="275" font-size="15" fill="#39FF14" opacity="0.8">vigneshsindhe</text>
+<text x="50" y="300" font-size="15" fill="#00FF00" opacity="0.4">&gt;&gt; cat skills.txt</text>
+<text x="190" y="300" font-size="15" fill="#39FF14" opacity="0.8">Flutter • Dart • Next.js • Python • Firebase</text>
+<text x="50" y="325" font-size="15" fill="#00FF00" opacity="0.4">&gt;&gt; ls ~/projects</text>
+<text x="190" y="325" font-size="15" fill="#39FF14" opacity="0.8">portfolio • blog • utils</text>
+</g>
+</svg>
